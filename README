@@ -1,0 +1,11 @@
+AutoReagentDepost does extactly what you think. Whenever you visit a bank, any reagent's in your bags is automatically deposited into your Reagent bank.
+
+This is a simplified continuation of ReagentBanker by Tuhljin, which stopped working after patch 9.0
+
+
+
+# curse auto-build
+git commit -a || echo "did you forget to bump TOC?"
+git tag  #to see last tags
+git tag -a v3.0 -m "Release 3.0"
+git push && git push --tags
