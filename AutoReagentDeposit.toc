@@ -1,0 +1,8 @@
+## Interface: 110002
+## Title: Auto Reagent Deposit
+## Version: 1.2.0
+## Author: Tsaavik Gnoballs@greymane. Based on  Tuhljin's ReagentDeposit (2020)
+## Notes: Automatically deposits your Reagents when visiting the bank.
+
+AutoReagentDeposit.lua
+
