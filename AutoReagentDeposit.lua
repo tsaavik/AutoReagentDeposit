@@ -163,21 +163,26 @@ local function OnEvent(self, event, ...)
 	if (DEBUG) then  chatprint(event);  end
 	if (event == "BANKFRAME_OPENED") then
 		if (DEBUG) then  chatprint("Event: BANKFRAME_OPENED");  end
-		if (not IsReagentBankUnlocked()) then  return;  end
+		if (not IsReagentBankUnlocked()) then
+			if (DEBUG) then  chatprint("AutoReagentDeposit: Reagent bank is not unlocked");  end
+		end
 		if (not seenBank) then
 			-- If we haven't been to the bank before this session, we need elements of the reagent tab to load in order to prevent an error in
 			-- function BankFrameItemButton_Update that happens when we try to make a deposit at this time.
-			ReagentBankFrame_OnShow(ReagentBankFrame)
+			if (DEBUG) then  chatprint("AutoReagentDeposit: seenBank is false");  end
+		 	ReagentBankFrame_OnShow(ReagentBankFrame)
 			seenBank = true
 		end
 
-		if (deposit) then
-			C_Timer.After(0, function() -- This delay may prevent the intermittent problem where items already in the reagent bank appear to be newly deposited because getReagentBankContents() somehow failed to find any items when called by preDeposit().
-				preDeposit()
-				DepositReagentBank()
-				postDeposit()
-			end)
-		end
+		if (DEBUG) then  chatprint("AutoReagentDeposit: doing deposit");  end
+		C_Timer.After(0, function() -- This delay may prevent the intermittent problem where items already in the reagent bank appear to be newly deposited because getReagentBankContents() somehow failed to find any items when called by preDeposit().
+			if (DEBUG) then  chatprint("AutoReagentDeposit: doing predeposit");  end
+			preDeposit()
+			if (DEBUG) then  chatprint("AutoReagentDeposit: doing depositreagentbank");  end
+			DepositReagentBank()
+			if (DEBUG) then  chatprint("AutoReagentDeposit: doing postdeposit");  end
+			postDeposit()
+		end)
 
 
 	elseif (event == "PLAYERREAGENTBANKSLOTS_CHANGED") then
