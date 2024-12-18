@@ -4,8 +4,11 @@ This is a simplified continuation of ReagentBanker by Tuhljin, which stopped wor
 
 
 
+
+
 # curse auto-build
 git commit -a || echo "did you forget to bump TOC?"
 git tag  #to see last tags
 git tag -a v3.0 -m "Release 3.0"
-git push && git push --tags
+git push && git push origin tag $(git tag |tail -1)
+

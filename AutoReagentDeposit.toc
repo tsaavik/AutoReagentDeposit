@@ -1,7 +1,7 @@
 ## Last updated @file-date-iso@
-## Interface: 110005
+## Interface: 110007
 ## Title: Auto Reagent Deposit
-## Version: 1.2.1
+## Version: @project-revision@
 ## Author: Tsaavik Gnoballs@greymane. Based on  Tuhljin's ReagentDeposit (2020)
 ## Notes: Automatically deposits your Reagents when visiting the bank.
 
