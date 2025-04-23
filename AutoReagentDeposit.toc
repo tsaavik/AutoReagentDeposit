@@ -1,8 +1,10 @@
 ## Last updated @file-date-iso@
-## Interface: 110100
+## Interface: 110105
 ## Title: Auto Reagent Deposit
 ## Version: @project-revision@
 ## Author: Tsaavik Gnoballs@greymane. Based on  Tuhljin's ReagentDeposit (2020)
 ## Notes: Automatically deposits your Reagents when visiting the bank.
+## X-Curse-Project-ID: 1080787
+
 AutoReagentDeposit.lua
 
