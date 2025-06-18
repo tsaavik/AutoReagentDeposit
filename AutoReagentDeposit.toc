@@ -1,5 +1,5 @@
 ## Last updated @file-date-iso@
-## Interface: 110105
+## Interface: 110107
 ## Title: Auto Reagent Deposit
 ## Version: @project-revision@
 ## Author: Tsaavik Gnoballs@greymane. Based on  Tuhljin's ReagentDeposit (2020)
