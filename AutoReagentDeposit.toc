@@ -5,6 +5,17 @@
 ## Author: Tsaavik Gnoballs@greymane. Based on Tuhljin's ReagentDeposit (2020)
 ## Notes: Automatically deposits your Reagents when visiting the bank.
 ## X-Curse-Project-ID: 1080787
+## Category: Inventory
+## Category-deDE: Inventar
+## Category-esES: Inventario
+## Category-esMX: Inventario
+## Category-frFR: Inventaire
+## Category-itIT: Inventario
+## Category-koKR: 소지품
+## Category-ptBR: Inventário
+## Category-ruRU: Предметы
+## Category-zhCN: 物品栏
+## Category-zhTW: 物品欄
 
 AutoReagentDeposit.lua
 
