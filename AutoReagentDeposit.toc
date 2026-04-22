@@ -1,5 +1,5 @@
 ## Last updated @file-date-iso@
-## Interface: 120001
+## Interface: 120005
 ## Title: Auto Reagent Deposit
 ## Version: @project-revision@
 ## Author: Tsaavik Gnoballs@greymane.
